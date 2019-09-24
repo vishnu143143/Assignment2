@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    tools:context=".Otp">
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_chevron_left_black_24dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/otp_verification"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:paddingLeft="15dp"
+        android:text="@string/otp_sms"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_otp_one"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:nextFocusForward="@id/et_otp_two"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/et_otp_two"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:nextFocusForward="@id/et_otp_three"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/et_otp_three"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:nextFocusForward="@id/et_otp_four"/>
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/et_otp_four"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reSend"
+            android:layout_width="175dp"
+            android:background="@drawable/button_bg_stoke"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="resend">
+
+        </Button>
+
+        <Button
+            android:background="#082c3b"
+            android:textColor="#fff"
+            android:id="@+id/submitButton"
+            android:layout_width="167dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:text="Submit">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

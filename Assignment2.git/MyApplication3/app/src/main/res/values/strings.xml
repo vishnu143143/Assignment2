@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="Login">Log in to your "\n" account</string>
+    <string name="Dont_have">Dont have an account?</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_sms">Enter the verification code "\n" sent to your number via sms</string>
+    <string name="welcome">Welcome ,</string>
+    <string name="information">Please provide your basic information</string>
+
+</resources>

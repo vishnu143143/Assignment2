@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:text="@string/Login"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/gmail_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingTop="30dp">
+
+    </EditText>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="30dp">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/image_Visible"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@id/password"
+            android:layout_marginLeft="-53dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/password"
+            android:src="@drawable/ic_visibility_off_black_24dp">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorBack"
+        android:text="Login"
+
+        android:id="@+id/login_button"
+        android:textColor="@color/colorButton">
+
+
+    </Button>
+
+    <LinearLayout
+       android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:paddingLeft="50dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dont_have"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/register_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/colorBack"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
